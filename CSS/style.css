@@ -1,0 +1,307 @@
+/* General gridstyle Body Layout */
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
+    height: 100vh; 
+    font-family: Arial, sans-serif; 
+}
+
+/* Header Styles */
+header {
+    background-color: #343a40; 
+    color: white; 
+    text-align: center;
+    padding: 1.5rem; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+/* Navigation Container */
+header .main-nav {
+    display: flex;
+    justify-content: center; 
+    gap: 1rem; 
+    margin-top: 1rem;
+}
+
+/* Navigation Buttons */
+.main-nav .btn {
+    font-size: 1rem; 
+    padding: 0.5rem 1.2rem; 
+    border-radius: 5px; 
+    text-transform: uppercase; 
+    color: white; 
+    border: 1px solid white; 
+    background-color: transparent; 
+}
+
+/* Hover Effects */
+.main-nav .btn:hover {
+    background-color: white; 
+    color: #343a40; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+/* Specific Button Colors */
+.main-nav .btn-home {
+    background-color: #007bff; 
+    border-color: #007bff;
+}
+.main-nav .btn-mona {
+    background-color: #8b008b; /* Magenta */
+    border-color: #8b008b;
+}
+.main-nav .btn-tenley {
+    background-color: #8b4513; /* Saddle brown */
+    border-color: #8b4513   ;
+}
+.main-nav .btn-maxwell {
+    background-color: #8b0000; /* Dark red */
+    border-color: #8b0000;
+}
+
+/* Hover Effects for Specific Buttons */
+.main-nav .btn-home:hover,
+.main-nav .btn-mona:hover,
+.main-nav .btn-tenley:hover,
+.main-nav .btn-maxwell:hover {
+    background-color: white; 
+    color: #343a40;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .main-nav {
+        flex-direction: column; 
+    }
+
+    .main-nav .btn {
+        width: 100%; 
+        text-align: center;
+    }
+}
+
+/* Styles for the footer */
+footer {
+    background-color: #495057; 
+    color: #e9ecef; 
+    text-align: center;
+    padding: 1rem 1rem;
+    border-top: 2px solid #6c757d; 
+    font-size: 0.9rem;
+}
+
+/* Styling for footer links */
+footer a {
+    color: #adb5bd; 
+    text-decoration: none;
+}
+footer a:hover {
+    color: white; 
+    text-decoration: underline;
+}
+
+/* Main Content Layout */
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr; 
+    gap: 1rem;
+    overflow: hidden; 
+    padding: 1rem;
+}
+
+/* Style for the sidebar */
+#sidebar {
+    background-color: #f1f1f1;
+    padding: 1rem;
+    height: 100%;
+    overflow-y: auto; 
+    position: sticky;
+    top: 0; 
+    border-right: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Main Content */
+#content {
+    overflow-y: auto; 
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+/* Blog Post Badges */
+.badge-mona {
+    background-color: #8b008b;
+    color: white;
+}
+.badge-tenley {
+    background-color: #8b4513;
+    color: white;
+}
+.badge-maxwell {
+    background-color: #8b0000;
+    color: white;
+}
+.badge-short {
+    background-color: green;
+    color: white;
+}
+.badge-long {
+    background-color: orange;
+    color: white;
+}
+.badge-latin {
+    background-color: teal;
+    color: white;
+}
+
+/* General styling for forms */
+form {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for form input fields, select menus, and buttons */
+form input, form select, form button {
+    width: 100%; 
+    margin-bottom: 1rem; 
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Styling for anchor links in navigation */
+nav a {
+    text-decoration: none;
+    color: #007bff; 
+    margin: 0 0.5rem;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+/*  styling for the poll results section */
+#pollResults {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+#pollResults p {
+    margin: 0.5rem 0;
+    font-weight: normal;
+    color: #555;
+}
+#pollResults strong {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Poll Results Titles */
+.poll-results-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #007bff; 
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+
+/* Individual Poll Result Items */
+.poll-result-item {
+    display: flex;
+    justify-content: space-between; 
+    padding: 0.5rem 0; 
+    border-bottom: 1px dashed #ccc; 
+}
+
+/* Removes border for the last item */
+.poll-result-item:last-child {
+    border-bottom: none;
+}
+
+/* Responsive Layout for Small Screens */
+@media (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: row; 
+        gap: 0.5rem; 
+    }
+
+    #sidebar {
+        width: 35%; 
+        min-width: 150px; 
+        max-width: 200px; 
+        overflow-y: auto; 
+        padding: 0.5rem; 
+        background-color: #f8f9fa; 
+        border-radius: 5px; 
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+    }
+
+    #content {
+        width: 65%; 
+        padding: 0.5rem;
+        background-color: white; 
+        border-radius: 5px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+    }
+
+    /* Poll Form Adjustments */
+    #pollForm {
+        display: flex;
+        flex-direction: column; 
+        gap: 0.5rem;
+    }
+
+    #pollForm input,
+    #pollForm select,
+    #pollForm button {
+        width: 100%; 
+        box-sizing: border-box; 
+    }
+
+    /* Adjust Font Sizes for Smaller Screens */
+    body {
+        font-size: 14px; 
+    }
+
+    .btn {
+        font-size: 0.9rem; 
+        padding: 0.3rem 0.6rem; 
+    }
+
+    #sidebar h3,
+    #content h2 {
+        font-size: 1.25rem; 
+    }
+}
+
+/* Refine Layout for Narrow Screens (Phones < 480px) */
+@media (max-width: 480px) {
+    #sidebar {
+        width: 40%; 
+    }
+
+    #content {
+        width: 60%; 
+    }
+
+    #pollForm {
+        gap: 0.4rem; 
+    }
+
+    body {
+        font-size: 13px; 
+    }
+}
+
