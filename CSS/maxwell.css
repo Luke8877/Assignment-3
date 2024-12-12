@@ -137,6 +137,7 @@ footer {
         max-width: 100%;
         font-size: 0.9rem;
         padding: 5px 10px;
+        display: none;
     }
     .carousel-control-prev,
     .carousel-control-next {
