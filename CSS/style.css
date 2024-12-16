@@ -34,6 +34,7 @@ header .main-nav {
     color: white; 
     border: 1px solid white; 
     background-color: transparent; 
+    margin-top: 10px;
 }
 
 /* Hover Effects */
@@ -47,18 +48,22 @@ header .main-nav {
 .main-nav .btn-home {
     background-color: #007bff; 
     border-color: #007bff;
+    text-decoration: none;
 }
 .main-nav .btn-mona {
     background-color: #8b008b; /* Magenta */
     border-color: #8b008b;
+    text-decoration: none;
 }
 .main-nav .btn-tenley {
     background-color: #8b4513; /* Saddle brown */
-    border-color: #8b4513   ;
+    border-color: #8b4513;
+    text-decoration: none;
 }
 .main-nav .btn-maxwell {
     background-color: #8b0000; /* Dark red */
     border-color: #8b0000;
+    text-decoration: none;
 }
 
 /* Hover Effects for Specific Buttons */
@@ -292,8 +297,8 @@ nav a:hover {
     }
 
     .btn {
-        font-size: 0.9rem; 
-        padding: 0.3rem 0.6rem; 
+        font-size: 0.9rem;
+        padding: 0.3rem 0.6rem;
     }
 
     #sidebar h3,

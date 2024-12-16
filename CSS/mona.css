@@ -26,7 +26,7 @@ footer {
     overflow-y: auto; 
 }
 
-.main-nav .btn {
+.navbar .btn {
     background-color: #ff9494; 
     color: #FFFFFF; 
     font-size: 1rem; 
@@ -37,7 +37,7 @@ footer {
     transition: all 0.3s ease; 
 }
 
-.main-nav .btn:hover {
+.navbar .btn:hover {
     background-color: #ffc6c6; 
     transform: scale(1.05); 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
