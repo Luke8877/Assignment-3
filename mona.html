@@ -20,22 +20,17 @@
 <body>
 
     <header>
-        <!-- <nav class="main-nav">
-            <a href="index.html" class="btn btn-info">Home</a>
-        </nav> -->
         <h1 class="navbar-text">Mona's Page</h1>
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Travis' Cats</a>
-            </div>
-          </nav>
+        <nav class="main-nav">
+            <a href="index.html" class="btn btn-info">Home</a>
+            <a href="mona.html" class="btn btn-info">Mona</a>
+        </nav>
     </header>
 
     <main>
         <!-- sidebar -->
         <aside id="sidebar">
             <div class="container">
-                <!-- Top Row with 2 Photos -->
                 <div class="row">
                     <div class="col-md-12 mb-3">
                         <!-- Card 1 -->
@@ -48,14 +43,13 @@
                         </div>
                     </div>
                 </div>
-                <!-- Bottom Row with 2 Photos -->
                 <div class="row">
                     <div class="col-md-12 mb-3">
                         <!-- Card 2 -->
                         <div class="card h-100">
                             <img src="images/Mona/mona3.jpg" class="card-img-top" alt="Mona judgment again">
                             <div class="card-body">
-                                <h5 class="card-title">Judgment time</h5>
+                                <h5 class="card-title">Judgment time.</h5>
                                 <p class="card-text">Maybe she's judging you who are visiting this page.</p>
                             </div>
                         </div>
@@ -63,10 +57,11 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12 mb-3">
+                        <!-- Card 3 -->
                         <div class="card h-100">
                             <img src="images/Mona/mona6.jpg" class="card-img-top" alt="Mona trying to fit in a box">
                             <div class="card-body">
-                                <h5 class="card-title">Mona trying to fit in the box</h5>
+                                <h5 class="card-title">Mona trying to fit in the box.</h5>
                                 <p class="card-text">Well, maybe we need a bigger box.</p>
                             </div>
                         </div>
@@ -78,6 +73,7 @@
         <!-- main content -->
         <section id="content">
             <h2>Mona's Biography</h2>
+            <!-- each paragraph was put inside a <p> element because bootstrap has some default styles for this element granting a better spacing -->
             <p>
                 Mona is my sweet little weirdo – she is about 6 years old now. At first glance, she seems
                 like a tough cat to love: always on edge, anxious, shy, and seems to not like being touched.
@@ -95,18 +91,20 @@
                 Despite her being a bit of a brat, she’s always been there for me, and I look forward to
                 having her be a little pest for the years to come!
             </p>
-            <!-- carrousel -->
+            <!-- carousel -->
             <section id="mona-carousel-container">
                 <h2 class="carousel-title">Mona's Moments</h2>
-                <div id="monaCarrousel" class="carousel slide">
+                <div id="monaCarousel" class="carousel slide">
+                    <!-- clickable indicators on the bottom of carrousel -->
                     <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#monaCarrousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#monaCarrousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#monaCarrousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#monaCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#monaCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#monaCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="images/Mona/mona4.jpg" class="d-block w-100" alt="Mona being attacked by a strange entity.">
+                            <!-- The captions will appear on medium-sized screens, however on small-sized, captions will overlap the images  -->
                             <div class="carousel-caption d-none d-md-block">
                                 <p>Mona being attacked by an unidentified entity.</p>
                             </div>
@@ -124,11 +122,11 @@
                             </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#monaCarrousel" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#monaCarousel" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#monaCarrousel" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#monaCarousel" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>

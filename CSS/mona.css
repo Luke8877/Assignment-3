@@ -14,6 +14,7 @@ footer {
     border-top: none; 
 }
 
+/* sidebar styles */
 #sidebar {
     background-color: #f8f9fa; 
     padding: 1rem; 
@@ -26,7 +27,8 @@ footer {
     overflow-y: auto; 
 }
 
-.navbar .btn {
+/* navbar styles */
+.main-nav .btn {
     background-color: #ff9494; 
     color: #FFFFFF; 
     font-size: 1rem; 
@@ -37,13 +39,14 @@ footer {
     transition: all 0.3s ease; 
 }
 
-.navbar .btn:hover {
+.main-nav .btn:hover {
     background-color: #ffc6c6; 
     transform: scale(1.05); 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     text-decoration: none;
 }
 
+/* carousel styles */
 .carousel-caption {
     position: absolute;
     bottom: 10px; 
@@ -81,12 +84,5 @@ footer {
     .carousel-caption {
         font-size: 0.9rem; 
         padding: 5px 10px;
-    }
-}
-
-@media (max-width: 576px) {
-    .carousel-caption {
-        font-size: 0.8rem;
-        padding: 4px 8px;
     }
 }
