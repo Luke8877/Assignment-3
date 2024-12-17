@@ -25,7 +25,7 @@ header .main-nav {
     margin-top: 1rem;
 }
 
-div > h2 {
+.nav-header {
     display: none;
 }
 
@@ -250,11 +250,11 @@ nav a:hover {
         gap: 0.5rem; 
     }
     /* This will prevent the H1 to be displayed on the top of the page on smaller screens */
-    header > h1 {
+    .main-header {
         display: none;
     }
     /* This will display the H1 on the left side of the hamburger menu on smaller screens */
-    div > h2 {
+    .nav-header {
         display: block;
     }
 
