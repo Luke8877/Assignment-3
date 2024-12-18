@@ -173,8 +173,13 @@ main {
         font-size: 0.8rem;
     }
 
-    #biography {
+    #content {
         padding: 10px;
+        flex-grow: 1; 
+        width: 100%; 
+        padding: 1rem; 
+        box-sizing: border-box; 
+    }
     }
 
     #tenley-carousel-container {
@@ -185,4 +190,3 @@ main {
         max-height: 300px;
         object-fit: cover;
     }
-}
