@@ -1,3 +1,9 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+}
+
 /* Header and Footer Styles */
 header, footer {
     background-color: #8b4513; 
@@ -8,7 +14,6 @@ header, footer {
 }
 
 footer {
-    padding: 1rem;
     font-size: 0.9rem;
     border-top: none; 
 }
@@ -36,17 +41,20 @@ text-decoration: underline;
     text-decoration: none;
 }
 
+#biography {
+    flex-grow: 1; 
+    padding: 20px;
+}
 
 #sidebar {
-    background-color: #f8f9fa; 
-    padding: 1rem; 
-    border-radius: 8px; 
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
-    display: flex;
-    flex-direction: column; 
-    gap: 0.5rem; 
-    max-height: calc(100vh - 100px); 
+    background-color: #f1f1f1;
+    padding: 1rem;
+    height: 100%; 
     overflow-y: auto; 
+    position: sticky; 
+    top: 0;
+    border-right: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 /* Sidebar Navigation */
@@ -90,7 +98,6 @@ text-decoration: underline;
     color: white; 
 }
 
-
 .navbar .btn {
     background-color: #ff9494; 
     color: #FFFFFF; 
@@ -123,13 +130,17 @@ text-decoration: underline;
     text-align: center;
 }
 
+#tenleyCarrousel {
+    max-width: 100%;
+}
+
 .carousel-title {
     text-align: center;
     color: #FFFFFF;
 }
 
 #tenley-carousel-container {
-    max-width: 500px; 
+    max-width: 250px; 
     margin: 30px auto; 
     padding: 15px; 
     background-color: #8b4513; 
