@@ -51,3 +51,5 @@ document.getElementById("pollForm").addEventListener("submit", function (e) {
     const thankYouModal = new bootstrap.Modal(document.getElementById("thankYouModal"));
     thankYouModal.show();
 });
+
+
